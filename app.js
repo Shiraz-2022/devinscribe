@@ -173,10 +173,10 @@ app.delete('/resourcePage/tutorials/:id', (req, res) => {
 //Source codes, codes get and post
 
 app.get('/resourcePage/sourcecodes', (req, res) => {
-    if (!blogs) {
+    if (!codes) {
         return res.status(404).send('The file you were looking for was not found');
     }
-    res.send(blogs);
+    res.send(codes);
 });
 
 app.post('/resourcePage/sourcecodes', (req, res) => {
@@ -188,16 +188,16 @@ app.post('/resourcePage/sourcecodes', (req, res) => {
         title: req.body.title,
         link: req.body.link,
     }
-    blogs.push(code);
+    codes.push(code);
     res.send(code);
 });
 
 //sorce codes , codes get, put and delete for a single resource
 
 app.get('/resourcePage/sourcecodes/:id', (req, res) => {
-    const blog = blogs.find(b => b.id === parseInt(req.params.id));
-    if (!blog) { return res.status(404).send('The file you were looking for was not found'); }
-    res.send(blog);
+    const code = codes.find(b => b.id === parseInt(req.params.id));
+    if (!code) { return res.status(404).send('The file you were looking for was not found'); }
+    res.send(code);
 });
 
 app.put('/resourcePage/sourcecodes/:id', (req, res) => {
@@ -219,10 +219,10 @@ app.delete('/resourcePage/sourcecodes/:id', (req, res) => {
 });
 
 
-app.use(express.static(path.join(__dirname,"../build")));
+app.use(express.static(path.join(__dirname,"./build")));
 
 app.get("*", (req,res)=>{
-    res.sendFile(path.join(__dirname, "../build/index.html"))
+    res.sendFile(path.join(__dirname, "./build/index.html"))
 });
 
 

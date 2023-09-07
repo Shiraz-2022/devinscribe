@@ -567,9 +567,9 @@ animation:slideLeftMain 0.6s ease forwards;
 
 
 
-  /*..................... resource page resources...................... */
+  /*..................... resource page resources,resource page codes ...................... */
 
-.r-p-resources{
+.r-p-resources, .r-p-sourcecodes{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -578,7 +578,7 @@ animation:slideLeftMain 0.6s ease forwards;
     overflow-x: hidden;
     padding:30px 0;
 }
-.r-p-resources-main{
+.r-p-resources-main, .r-p-sourcecodes-main{
     width: 100%;
 }
 
@@ -586,7 +586,7 @@ hr{
     width:95%;
 }
 
-.r-p-resources-content{
+.r-p-resources-content, .r-p-sourcecodes-content{
     width: 100%;
     display: flex;
     color: white;
@@ -596,7 +596,7 @@ hr{
     padding-bottom:20px;
 }
 
-.r-p-resources-content button{
+.r-p-resources-content button, .r-p-sourcecodes-content button{
     padding:7px 20px;
     border-radius: 7px;
     font-size: 16px;
@@ -605,7 +605,7 @@ hr{
     color: white;
 }
 
-.r-p-resources-content button:hover{
+.r-p-resources-content button:hover, .r-p-sourcecodes-content button:hover{
     background-color: #582573;
 }
 

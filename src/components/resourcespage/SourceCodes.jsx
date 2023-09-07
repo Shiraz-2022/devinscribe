@@ -24,7 +24,7 @@ function SourceCodes() {
     return (
         <>
         
-            <div className="r-p-SourceCodes">
+            <div className="r-p-sourcecodes">
                 {!isLoaded && <img className='loading-image' src="images/25.gif" alt="gif"/>}
                 {isLoaded && SourceCodes.map((code)=> (
                     <div className='r-p-sourcecodes-main'>
