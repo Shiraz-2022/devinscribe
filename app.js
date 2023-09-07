@@ -210,7 +210,7 @@ app.put('/resourcePage/sourcecodes/:id', (req, res) => {
 });
 
 app.delete('/resourcePage/sourcecodes/:id', (req, res) => {
-    const code = code.find(b => b.id === parseInt(req.params.id));
+    const code = codes.find(b => b.id === parseInt(req.params.id));
     if (!code) { return res.status(404).send('The file you were looking for was not found'); }
 
     const index = codes.indexOf(code);
