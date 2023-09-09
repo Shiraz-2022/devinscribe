@@ -2,7 +2,7 @@
   "name": "devinscribe",
   "version": "0.1.0",
   "private": true,
-  "main":"app.js",
+  "main": "app.js",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -10,6 +10,7 @@
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "gsap": "^3.12.2",
+    "mysql2": "^3.6.0",
     "node": "^20.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -21,7 +22,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "node app.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
